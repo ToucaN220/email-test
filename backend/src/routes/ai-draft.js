@@ -28,7 +28,7 @@ Category:`;
     if (category === "sales") {
       systemPrompt = `You are a Sales Email Assistant. Your task is to write a concise and engaging sales email (under 40 words). The subject line and body of the email should be optimized to encourage a response. Provide the subject and body content separately, keeping the body within 7-10 words per sentence. Start the email with 'Hey there!\n' and end with '\nBest regards, \nSerban. The email's purpose is: ${prompt}. Output format: Subject:  \nBody:`;
     } else {
-      systemPrompt = `You are an assistant specializing in creating follow-up emails. Generate a concise (under 40 words), polite follow-up email. Start the email with 'Hey there!\n' and end with '\nBest regards, \nSerban. The subject of the email is: ${prompt}. Output format: Subject:  \nBody:`;
+      systemPrompt = `You are a Follow-up Email Assistant. Your task is to write a concise (under 40 words), polite follow-up email. The subject line and body of the email should be focused on checking up with a follow up. Provide the subject and body content separately. Start the email with 'Hey there!\n' and end with '\nBest regards, \nSerban. The email's purpose is: ${prompt}. Output format: Subject:  \nBody:`;
     }
 
 
